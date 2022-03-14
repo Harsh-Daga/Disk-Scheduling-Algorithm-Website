@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fcfsT.css">
+   
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li> <a href ="fcfsdemo.html"> Implement </a></li>
+            <li> <a href ="index.html"> Home </a></li>
+        </ul>
+    </nav>
+
+     <div class="th-text">
+        <h2><strong><center>FCFS (First-Come-First-Serve) Disk Scheduling Algorithm</center></strong></h2>
+        <p><t>FCFS (First-Come-First-Serve) is the simplest disk scheduling algorithm among all the scheduling algorithms. In the FCFS disk scheduling algorithm, each input/output request is served in the order in which the requests arrive. In this algorithm, starvation does not occur because FCFS address each request.It does not provide the fastest service.</t></p>
+
+    <h4>Algorithm of FCFS:</h4>
+        <ul type="square">
+            <li>Let Request array represents an array storing indexes of tracks that have been requested in ascending order of their time of arrival. ‘head’ is the position of disk head.</li>
+            <li>Let us one by one take the tracks in default order and calculate the absolute distance of the track from the head.</li>
+            <li>Increment the total seek count with this distance.</li>
+            <li>Currently serviced track position now becomes the new head position.</li>
+            <li>Go to step 2 until all tracks in request array have not been serviced.</li>
+        </ul>
+        <h4>Advantages of FCFS Disk scheduling Algorithm:</h4>
+        <p>The advantages of FCFS disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>In FCFS disk scheduling, there is no indefinite delay.</li>
+            <li>There is no starvation in FCFS disk scheduling because each request gets a fair chance.</li>
+        </ul>
+        <h4>Disadvantages of FCFS Disk Scheduling Algorithm:</h4>
+        <p>The disadvantages of FCFS disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>FCFS scheduling is not offered as the best service.</li>
+            <li>In FCFS, scheduling disk time is not optimized.</li>
+            <br>
+       
+        
+            
+        </ul>
+    </div>
+
+
+  </body>
+</html>
+
+
+
+
+     </div>

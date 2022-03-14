@@ -1,0 +1,54 @@
+*{
+    background:  white;
+    font-family:  'Times New Roman', Times, serif;
+	
+}
+.nav-list{
+    list-style-type: none;
+    margin: -10px;
+    padding: 0;
+    overflow: hidden;
+	background-color: black;
+}
+.nav-list li a{
+    display: block;
+	color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+	background-color: black;
+	margin:0;
+}
+.nav-list li a:hover{
+    background-color:white;
+    color: black;
+}
+.header{
+    margin-top:40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.calculation >button{
+    color: #000000;
+    background-color: #a19d9d;
+}
+.implem >button{
+    color: #000000;
+    background-color: #a19d9d;
+}
+footer {
+    color:white;
+    margin: -5px;;
+    width: 100%;
+    background-color:black;
+	padding: 5px 10px;
+}
+footer p{
+    background-color:black;
+}
+
+h4{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}

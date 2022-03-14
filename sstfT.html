@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sstf_css.css">
+
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li> <a href ="sstfdemo.html"> Implement </a></li>
+            <li> <a href ="index.html"> Home </a></li>
+        </ul>
+    </nav>
+    <div class="theory-text">
+        
+        <h2><strong>
+    SSTF (Shortest-Seek-Time-First) Disk Scheduling Algorithm
+</strong></h2>
+            <p><t>SSTF is another type of scheduling algorithm. In this type of disk scheduling, the job which has less seek time will be executed first. So, in SSTF (shortest seek time first) scheduling, we have to calculate the seek time first. and after calculating the seek time, each request will be served on the basis of seek time. The request which is close to the disk arm will be first executed. There are some drawbacks in FCFS. To overcome the limitations that arise in the FCFS. SSTF scheduling is implemented.</t></p>
+        <h4>Algorithm of SSTF: </h4>
+        <ul type="square">
+            <li>Let Request array represents an array storing indexes of tracks that have been requested. ‘head’ is the position of disk head.</li>
+            <li>Find the positive distance of all tracks in the request array from head.</li>
+            <li>Find a track from requested array which has not been accessed/serviced yet and has minimum distance from head.</li>
+            <li>Increment the total seek count with this distance.</li>
+            <li>Currently serviced track position now becomes the new head position.</li>
+            <li>Go to step 2 until all tracks in request array have not been serviced.</li>
+        </ul>
+        <h4>Advantages of SSTF Disk scheduling Algorithm:</h4>
+        <p>The advantages of SSTF disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>In SSTF disk scheduling, the average response time is decreased.</li>
+            <li>Increased throughput.</li>
+        </ul>
+        <h4>Disadvantages of SSTF Disk Scheduling Algorithm:</h4>
+        <p>The disadvantages of SSTF disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>In SSTF, there may be a chance of starvation.</li>
+            <li>SSTF is not an optimal algorithm.</li>
+            <li>There are chances of overhead in SSTF disk scheduling because, in this algorithm, we have to calculate the seek time in advanced.</li>
+            <li>The speed of this algorithm can be decreased because direction could be switched frequently.</li>
+            <br>
+       
+        
+            
+        </ul>
+    </div>
+
+</body>
+</html>
